@@ -61,7 +61,7 @@ svg {
 
 /******************************************************************************/
 /************************************************************ Custom styles */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;900&display=swap");
 
 :root {
   --primary-cyan: hsl(180, 66%, 49%);
@@ -86,7 +86,7 @@ body {
 
 .hide {
   opacity: 0;
-  transform: translate(0,-40rem);
+  transform: translate(0, -40rem);
   transition: transform 0ms 200ms, opacity 200ms 0ms;
 }
 
@@ -105,8 +105,6 @@ nav {
 
 nav > * {
   transition: transform 0ms 0ms, opacity 200ms 0ms;
-
-
 }
 
 nav .logo {
@@ -195,7 +193,6 @@ nav .nav-login .highlight {
   border-radius: 2rem;
 }
 
-
 .burger-button {
   background-color: transparent;
   border: none;
@@ -209,7 +206,7 @@ nav .nav-login .highlight {
 }
 
 .burger-button[aria-expanded="true"] .hamburger {
-  translate: 5px -3px;
+  translate: 4px -3px;
   rotate: 0.125turn;
 }
 
@@ -224,10 +221,9 @@ nav .nav-login .highlight {
 }
 
 header {
-  margin-bottom: 5rem;
+  margin-bottom: 9rem;
   width: 100%;
 }
-
 
 .img-container {
   width: 100%;
@@ -268,19 +264,120 @@ header p {
   font-size: 1.2rem;
   font-weight: 700;
   color: white;
-  padding: .75rem 1rem;
+  padding: 0.75rem 1rem;
   cursor: pointer;
 }
 
 .url-shortener {
-  background-color: hsl(0, 0%, 75%);
+  background-color: hsl(257, 17%, 83%);
+  display: flex;
+  justify-content: center;
+}
+
+.url-container {
+  position: relative;
+  top: -5rem;
+  display: block;
+  width: 90%;
+  padding: 1.5rem;
+  border-radius: 15px;
+  background-color: hsl(257, 27%, 26%);
+  background-image: url("./images/bg-shorten-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.url-container input {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 10px;
+  color: hsl(255, 11%, 22%);
+}
+
+.url-container input:focus {
+  outline: 2px solid hsl(180, 66%, 49%);
+}
+
+.url-container button {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 0.75rem 0;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  background-color: hsl(180, 66%, 49%);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 main {
-  background-color: hsl(0, 0%, 75%);
+  background-color: hsl(257, 17%, 83%);
+  width: 100&;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
+
+main .main-heading {
+  width: 90%;
+}
+
+main .card {
+  width: 90%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+main .card img {
+  position: absolute;
+  background-color: hsl(257, 27%, 26%);
+  border-radius: 50%;
+  padding: 1.5rem;
+  left: 50%;
+  transform: translate(-50%, -65%);
+}
+
+main .card h2 {
+  padding: 3rem 0 1rem;
 }
 
 footer {
   background-color: hsl(260, 8%, 14%);
   color: white;
+}
+
+.footer-hero {
+  background-image: url("./images/bg-boost-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-color: hsl(257, 27%, 26%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+.footer-hero h2 {
+  margin-bottom: 1rem;
+}
+
+.footer-hero button {
+  background: transparent;
+  background-color: hsl(180, 66%, 49%);
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
 }
