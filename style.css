@@ -58,3 +58,229 @@ svg {
     scroll-behavior: auto !important;
   }
 }
+
+/******************************************************************************/
+/************************************************************ Custom styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;900&display=swap');
+
+:root {
+  --primary-cyan: hsl(180, 66%, 49%);
+  --primary-dark-Violet: hsl(257, 27%, 26%);
+
+  --secondary-red: hsl(0, 87%, 67%);
+
+  --neutral-gray: hsl(0, 0%, 75%);
+  --neutral-grayish-violet: hsl(257, 7%, 63%);
+  --neutral-dark-blue: hsl(255, 11%, 22%);
+  --neutral-dark-violet: hsl(260, 8%, 14%);
+}
+
+body {
+  background-color: hsl(0, 0%, 75%);
+  background-color: white;
+  border: 1px solid transparent;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  min-height: 100vh;
+}
+
+.hide {
+  opacity: 0;
+  transform: translate(0,-40rem);
+  transition: transform 0ms 200ms, opacity 200ms 0ms;
+}
+
+nav {
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+
+  margin: 1.5rem 1rem;
+
+  font-size: 20px;
+  position: relative;
+}
+
+nav > * {
+  transition: transform 0ms 0ms, opacity 200ms 0ms;
+
+
+}
+
+nav .logo {
+  order: 1;
+  flex-grow: 2;
+  font-size: 2rem;
+  color: hsl(257, 27%, 26%);
+  font-weight: 900;
+  margin: 0 0 1rem;
+  cursor: pointer;
+}
+
+nav .burger-button {
+  order: 2;
+  flex-shrink: 2;
+  margin: 0 0 1rem;
+}
+
+nav .nav-items {
+  position: absolute;
+  top: 4rem;
+
+  order: 3;
+  flex-grow: 3;
+  width: 100%;
+  text-align: center;
+  list-style: none;
+
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+
+  border-bottom: 1px solid hsl(257, 7%, 63%);
+  border-radius: 15px 15px 0 0;
+
+  background-color: hsl(257, 27%, 26%);
+  color: white;
+
+  font-weight: 700;
+}
+
+nav .nav-items li {
+  padding: 0.75rem 0;
+  margin: 0 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+nav .nav-items li:hover {
+  background-color: hsl(260, 8%, 14%);
+}
+
+nav .nav-login {
+  position: absolute;
+  top: 16.7rem;
+
+  order: 4;
+  flex-grow: 3;
+  width: 100%;
+  text-align: center;
+  list-style: none;
+
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+
+  border-radius: 0 0 15px 15px;
+
+  background-color: hsl(257, 27%, 26%);
+  color: white;
+
+  font-weight: 700;
+}
+
+nav .nav-login li {
+  padding: 0.5rem 0;
+  margin: 0.5rem 2rem;
+  cursor: pointer;
+  border-radius: 2rem;
+}
+
+nav .nav-login li:hover {
+  background-color: hsl(260, 8%, 14%);
+}
+
+nav .nav-login .highlight {
+  background-color: hsl(180, 66%, 49%);
+  border-radius: 2rem;
+}
+
+
+.burger-button {
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.burger-button .hamburger {
+  transition: translate 300ms, rotate 300ms;
+}
+
+.burger-button[aria-expanded="true"] .hamburger {
+  translate: 5px -3px;
+  rotate: 0.125turn;
+}
+
+.burger-button .line {
+  transition: 300ms;
+  stroke-dasharray: 60 31 60 300;
+}
+
+.burger-button[aria-expanded="true"] .line {
+  stroke-dasharray: 60 105 60 300;
+  stroke-dashoffset: -90;
+}
+
+header {
+  margin-bottom: 5rem;
+  width: 100%;
+}
+
+
+.img-container {
+  width: 100%;
+  overflow: hidden;
+}
+header img {
+  position: relative;
+  z-index: 0;
+  left: 1rem;
+  min-width: 520px;
+}
+
+header h1 {
+  margin: 1rem 1rem;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1.2;
+
+  color: hsl(255, 11%, 22%);
+}
+
+header p {
+  color: hsl(257, 7%, 63%);
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 1rem;
+}
+
+.getStarted-button {
+  width: 50%;
+  margin: 0 25% 0;
+  background: transparent;
+  background-color: hsl(180, 66%, 49%);
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+  padding: .75rem 1rem;
+  cursor: pointer;
+}
+
+.url-shortener {
+  background-color: hsl(0, 0%, 75%);
+}
+
+main {
+  background-color: hsl(0, 0%, 75%);
+}
+
+footer {
+  background-color: hsl(260, 8%, 14%);
+  color: white;
+}

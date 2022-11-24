@@ -17,24 +17,41 @@
   </head>
   <body>
     <nav>
-      <!--  -->
-      Features Pricing Resources
-      <!--  -->
-      Login Sign Up
+      <img class="logo" src="" alt="Shortly">
+      <button class="burger-button" aria-controls="primary-navigation" aria-expanded="false">
+        <svg stroke="hsl(257, 7%, 63%)" fill="none" class="hamburger" viewBox="-10 -10 120 120" width="50">
+          <path class="line" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70">
+          </path>
+        </svg>
+      </button>
+      <ul class="nav-items hide">
+        <li>Features</li>
+        <li>Pricing</li>
+        <li>Resources</li>
+      </ul>
+      <ul class="nav-login hide">
+        <li>Login</li>
+        <li class="highlight">Sign Up</li>
+      </ul>
     </nav>
 
     <header>
-      <!--  -->
-      More than just shorter links
-      <!--  -->
-      Build your brand’s recognition and get detailed insights on how your links
-      are performing.
-      <!--  -->
-      Get Started
+      <div class="img-container"><img src="./images/illustration-working.svg" alt=""></div>
+      <h1>
+        More than just shorter links
+      </h1>
+
+      <p>
+        Build your brand’s recognition and get detailed insights on how your links are performing.
+      </p>
+
+      <button class="getStarted-button">
+        Get Started
+      </span>
     </header>
 
     <!-- url shortening -->
-    <section>
+    <section class="url-shortener">
       <!--  -->
       Shorten a link here...
       <!--  -->
@@ -84,5 +101,6 @@
     </footer>
 
     <script src="./script.js" charset="utf-8"></script>
+
   </body>
 </html>
