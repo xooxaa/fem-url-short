@@ -78,7 +78,6 @@ svg {
 body {
   background-color: hsl(0, 0%, 75%);
   background-color: white;
-  border: 1px solid transparent;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   min-height: 100vh;
@@ -193,6 +192,10 @@ nav .nav-login .highlight {
   border-radius: 2rem;
 }
 
+nav .nav-login .highlight:hover {
+  background-color: hsl(180, 66%, 69%);
+}
+
 .burger-button {
   background-color: transparent;
   border: none;
@@ -268,6 +271,9 @@ header p {
   cursor: pointer;
 }
 
+.getStarted-button:hover {
+  background-color: hsl(180, 66%, 69%);
+}
 .url-shortener {
   background-color: hsl(257, 17%, 83%);
   display: flex;
@@ -314,6 +320,10 @@ header p {
   cursor: pointer;
 }
 
+.url-container button:hover {
+  background-color: hsl(180, 66%, 69%);
+}
+
 main {
   background-color: hsl(257, 17%, 83%);
   width: 100&;
@@ -321,12 +331,12 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
 }
 
 main .main-heading {
   width: 90%;
+  margin-bottom: 5rem;
 }
 
 main .card {
@@ -334,10 +344,10 @@ main .card {
   background-color: white;
   border-radius: 10px;
   padding: 1rem;
-  margin-top: 3rem;
 }
 
 main .card img {
+  width: 90px;
   position: absolute;
   background-color: hsl(257, 27%, 26%);
   border-radius: 50%;
@@ -350,6 +360,12 @@ main .card h2 {
   padding: 3rem 0 1rem;
 }
 
+main .connector {
+  height: 6rem;
+  width: 0.5rem;
+  background-color: hsl(180, 66%, 49%);
+}
+
 footer {
   background-color: hsl(260, 8%, 14%);
   color: white;
@@ -358,7 +374,7 @@ footer {
 .footer-hero {
   background-image: url("./images/bg-boost-mobile.svg");
   background-repeat: no-repeat;
-  background-position: top left;
+  background-position: top right;
   background-color: hsl(257, 27%, 26%);
   display: flex;
   flex-direction: column;
@@ -378,6 +394,63 @@ footer {
   font-size: 1.2rem;
   font-weight: 700;
   color: white;
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 2rem;
+  cursor: pointer;
+}
+
+.footer-hero button:hover {
+  background-color: hsl(180, 66%, 69%);
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-nav .logo {
+  font-size: 2rem;
+  color: white;
+  font-weight: 900;
+  cursor: pointer;
+  margin: 3rem 0 1rem;
+}
+
+.footer-nav ul {
+  text-align: center;
+  list-style: none;
+  margin: 1rem 0;
+}
+
+.footer-nav ul li {
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+
+.footer-nav ul li:first-of-type {
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 1rem 0;
+}
+
+.footer-nav ul li:hover {
+  color: hsl(180, 66%, 49%);
+}
+
+.footer-nav ul li:first-of-type:hover {
+  color: white;
+  cursor: default;
+}
+
+.footer-nav .socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem 0 4rem;
+}
+
+.footer-nav .socials img {
   cursor: pointer;
 }
