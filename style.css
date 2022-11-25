@@ -99,6 +99,7 @@ nav {
   margin: 1.5rem 1rem;
 
   font-size: 20px;
+  color: hsl(257, 7%, 63%);
   position: relative;
 }
 
@@ -274,6 +275,7 @@ header p {
 .getStarted-button:hover {
   background-color: hsl(180, 66%, 69%);
 }
+
 .url-shortener {
   background-color: hsl(257, 17%, 83%);
   display: flex;
@@ -296,6 +298,7 @@ header p {
 .url-container input {
   width: 100%;
   font-size: 1.2rem;
+  font-weight: 500;
   padding: 0.75rem;
   margin-bottom: 1rem;
   border: none;
@@ -339,6 +342,15 @@ main .main-heading {
   margin-bottom: 5rem;
 }
 
+main .main-heading h2 {
+  color: hsl(260, 8%, 14%);
+  font-weight: 900;
+}
+
+main .main-heading p {
+  color: hsl(257, 7%, 43%);
+}
+
 main .card {
   width: 90%;
   background-color: white;
@@ -358,6 +370,12 @@ main .card img {
 
 main .card h2 {
   padding: 3rem 0 1rem;
+  color: hsl(260, 8%, 14%);
+  font-weight: 700;
+}
+
+main .card p {
+  color: hsl(257, 7%, 63%);
 }
 
 main .connector {
@@ -453,4 +471,306 @@ footer {
 
 .footer-nav .socials img {
   cursor: pointer;
+}
+
+@media only screen and (min-width: 1100px) {
+  .hide {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+
+  nav {
+    width: 80%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 2rem 10%;
+  }
+
+  nav .logo {
+    order: 1;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0.5rem;
+  }
+
+  nav .burger-button {
+    order: 5;
+    flex-shrink: 2;
+    display: none;
+  }
+
+  nav .nav-items {
+    opacity: 1 !important;
+
+    position: static;
+    top: 4rem;
+
+    order: 2;
+    flex-grow: 10;
+    width: auto;
+    text-align: center;
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+
+    border-bottom: none;
+    border-radius: 0;
+
+    background-color: transparent;
+    color: hsl(257, 7%, 63%);
+
+    display: flex;
+    gap: 2rem;
+  }
+
+  nav .nav-items li {
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  nav .nav-items li:hover {
+    color: hsl(180, 66%, 49%);
+    background-color: transparent;
+  }
+
+  nav .nav-login {
+    position: static;
+
+    order: 3;
+    flex-grow: 0;
+    width: auto;
+    text-align: center;
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+
+    border-radius: 0 0 15px 15px;
+
+    background-color: transparent;
+    color: hsl(257, 7%, 63%);
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  nav .nav-login li {
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  nav .nav-login li:hover {
+    color: hsl(180, 66%, 49%);
+    background-color: transparent;
+  }
+
+  nav .nav-login .highlight {
+    font-size: 1.2rem;
+    color: white;
+    padding: 0.25rem 1.5rem;
+  }
+
+  nav .nav-login .highlight:hover {
+    color: white;
+    background-color: hsl(180, 66%, 69%);
+  }
+
+  .burger-button {
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  header {
+    margin: 5rem 10% 12rem;
+    width: 80%;
+  }
+
+  .img-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  header img {
+    position: absolute;
+    left: auto;
+    right: -5rem;
+    top: 8rem;
+  }
+
+  header h1 {
+    width: 50%;
+    margin: 1rem 1rem;
+    text-align: left;
+    font-size: 4.5rem;
+    font-weight: 900;
+  }
+
+  header p {
+    width: 50%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: left;
+    margin: 1rem;
+  }
+
+  .getStarted-button {
+    width: 12rem;
+    margin: 1rem 0;
+  }
+
+  .url-shortener {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .url-container {
+    position: relative;
+    top: -4rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    padding: 2.5rem 4rem;
+    border-radius: 15px;
+    background-image: url("./images/bg-shorten-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+
+  .url-container input {
+    width: auto;
+    flex-grow: 5;
+    font-size: 1.2rem;
+    padding: 1rem 2.5rem;
+    margin: 0;
+  }
+
+  .url-container button {
+    width: auto;
+    flex-grow: 1;
+    padding: 1rem 0;
+  }
+
+  main {
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 4rem 10% 10rem;
+  }
+
+  main .main-heading {
+    width: 100%;
+    margin-bottom: 10rem;
+  }
+
+  main .main-heading h2 {
+    font-size: 2.5rem;
+  }
+
+  main .main-heading p {
+    width: 50%;
+    margin-left: 25%;
+    padding-top: 1rem;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  main .card {
+    position: relative;
+    flex-basis: 30%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    padding-top: 1rem;
+    text-align: left;
+  }
+
+  .moveup {
+    bottom: 3rem;
+  }
+
+  .movedown {
+    top: 3rem;
+  }
+
+  main .card img {
+    width: 90px;
+    position: absolute;
+    transform: translate(-170%, -70%);
+  }
+
+  main .connector {
+    position: relative;
+    flex-shrink: 1;
+    width: 5%;
+    height: 0.5rem;
+    bottom: 1rem;
+  }
+
+  .footer-hero {
+    background-image: url("./images/bg-boost-desktop.svg");
+    padding-top: 3rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .footer-hero h2 {
+    font-size: 3rem;
+  }
+
+  .footer-hero button {
+    font-size: 1.2rem;
+    padding: 1rem 4rem;
+  }
+
+  .footer-nav {
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding: 5rem 0 4rem;
+    gap: 2rem;
+  }
+
+  .footer-nav > * {
+    margin: 0 !important;
+  }
+
+  .footer-nav .logo {
+    flex-grow: 4;
+  }
+
+  .footer-nav ul {
+    padding: 0;
+    flex-grow: 1;
+  }
+
+  .footer-nav ul li:first-of-type {
+    padding: 0 0 1rem;
+  }
+
+  .footer-nav .socials {
+    padding: 0;
+    margin: 0;
+    flex-shrink: 1;
+    gap: 1rem;
+  }
+
+  .footer-nav .socials img {
+    cursor: pointer;
+  }
 }
