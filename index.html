@@ -1,177 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-  <link rel="stylesheet" href="style.css" />
+    <title>xx - url shortening</title>
+  </head>
 
-  <title>xx - url shortening</title>
-</head>
+  <body>
+    <nav>
+      <img class="logo" src="" alt="Shortly" />
+      <button
+        class="burger-button"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+        <svg
+          stroke="hsl(257, 7%, 63%)"
+          fill="none"
+          class="hamburger"
+          viewBox="-10 -10 120 120"
+          width="50"
+        >
+          <path
+            class="line"
+            stroke-width="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70"
+          ></path>
+        </svg>
+      </button>
+      <ul class="nav-items hide">
+        <li>Features</li>
+        <li>Pricing</li>
+        <li>Resources</li>
+      </ul>
+      <ul class="nav-login hide">
+        <li>Login</li>
+        <li class="highlight">Sign Up</li>
+      </ul>
+    </nav>
 
-<body>
-  <nav>
-    <img class="logo" src="" alt="Shortly">
-    <button class="burger-button" aria-controls="primary-navigation" aria-expanded="false">
-      <svg stroke="hsl(257, 7%, 63%)" fill="none" class="hamburger" viewBox="-10 -10 120 120" width="50">
-        <path class="line" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70">
-        </path>
-      </svg>
-    </button>
-    <ul class="nav-items hide">
-      <li>Features</li>
-      <li>Pricing</li>
-      <li>Resources</li>
-    </ul>
-    <ul class="nav-login hide">
-      <li>Login</li>
-      <li class="highlight">Sign Up</li>
-    </ul>
-  </nav>
+    <header>
+      <div class="img-container">
+        <img src="./images/illustration-working.svg" alt="" />
+      </div>
+      <h1>
+        More than just shorter links
+      </h1>
 
-  <header>
-    <div class="img-container"><img src="./images/illustration-working.svg" alt=""></div>
-    <h1>
-      More than just shorter links
-    </h1>
-
-    <p>
-      Build your brand’s recognition and get detailed insights on how your links are performing.
-    </p>
-
-    <button class="getStarted-button">
-      Get Started
-      </span>
-  </header>
-
-  <!-- url shortening -->
-  <section class="url-shortener">
-    <div class="url-container">
-      <input type="text" placeholder="Shorten a link here...">
-      <button type="button" name="button">Shorten It!</button>
-    </div>
-  </section>
-
-  <main>
-    <div class="main-heading">
-      <h2>
-        Advanced Statistics
-      </h2>
       <p>
-        Track how your links are performing across the web with our advanced
-        statistics dashboard.
+        Build your brand’s recognition and get detailed insights on how your
+        links are performing.
       </p>
-    </div>
 
-    <div class="card moveup">
-      <img src="./images/icon-brand-recognition.svg" alt="">
-      <h2>
-        Brand Recognition
-      </h2>
-      <p>
-        Boost your brand recognition with each click. Generic links don’t mean a
-        thing. Branded links help instil confidence in your content.
-      </p>
-    </div>
-
-    <div class="connector"></div>
-
-    <div class="card">
-      <img src="./images/icon-detailed-records.svg" alt="">
-      <h2>
-        Detailed Records
-      </h2>
-      <p>
-        Gain insights into who is clicking your links. Knowing when and where
-        people engage with your content helps inform better decisions.
-      </p>
-    </div>
-
-    <div class="connector"></div>
-
-    <div class="card movedown">
-      <img src="./images/icon-fully-customizable.svg" alt="">
-      <h2>
-        Fully Customizable
-      </h2>
-      <p>
-        Improve brand awareness and content discoverability through customizable
-        links, supercharging audience engagement.
-      </p>
-    </div>
-  </main>
-
-  <footer>
-    <div class="footer-hero">
-      <h2>
-        Boost your links today
-      </h2>
-      <button>
+      <button class="getStarted-button">
         Get Started
       </button>
-    </div>
-    <div class="footer-nav">
-      <img class="logo" src="" alt="Shortly">
-      <ul>
-        <li>
-          Features
-        </li>
-        <li>
-          Link Shortening
-        </li>
-        <li>
-          Branded Links
-        </li>
-        <li>
-          Analytics
-        </li>
-      </ul>
-      <ul>
-        <li>
-          Resources
-        </li>
-        <li>
-          Blog
-        </li>
-        <li>
-          Developers
-        </li>
-        <li>
-          Support
-        </li>
-      </ul>
-      <ul>
-        <li>
-          Company
-        </li>
-        <li>
-          About
-        </li>
-        <li>
-          Our Team
-        </li>
-        <li>
-          Careers
-        </li>
-        <li>
-          Contact
-        </li>
-      </ul>
-      <div class="socials">
-        <img class="social" src="./images/icon-facebook.svg" alt="">
-        <img class="social" src="./images/icon-twitter.svg" alt="">
-        <img class="social" src="./images/icon-pinterest.svg" alt="">
-        <img class="social" src="./images/icon-instagram.svg" alt="">
+    </header>
+
+    <!-- url shortening -->
+    <section class="url-shortener">
+      <div class="url-container">
+        <input type="text" placeholder="Shorten a link here..." />
+        <button type="button" name="button">Shorten It!</button>
       </div>
-    </div>
 
-  </footer>
+      <div class="short-url">
+        <span class="long-link">https://www.discbox.info</span>
+        <span class="short-link"
+          ><a href="www.discbox.info">discbox.info</a></span
+        >
+        <button type="button" name="button">Copy</button>
+      </div>
+    </section>
 
-  <script src="./script.js" charset="utf-8"></script>
+    <main>
+      <div class="main-heading">
+        <h2>
+          Advanced Statistics
+        </h2>
+        <p>
+          Track how your links are performing across the web with our advanced
+          statistics dashboard.
+        </p>
+      </div>
 
-</body>
+      <div class="card moveup">
+        <img src="./images/icon-brand-recognition.svg" alt="" />
+        <h2>
+          Brand Recognition
+        </h2>
+        <p>
+          Boost your brand recognition with each click. Generic links don’t mean
+          a thing. Branded links help instil confidence in your content.
+        </p>
+      </div>
 
+      <div class="connector"></div>
+
+      <div class="card">
+        <img src="./images/icon-detailed-records.svg" alt="" />
+        <h2>
+          Detailed Records
+        </h2>
+        <p>
+          Gain insights into who is clicking your links. Knowing when and where
+          people engage with your content helps inform better decisions.
+        </p>
+      </div>
+
+      <div class="connector"></div>
+
+      <div class="card movedown">
+        <img src="./images/icon-fully-customizable.svg" alt="" />
+        <h2>
+          Fully Customizable
+        </h2>
+        <p>
+          Improve brand awareness and content discoverability through
+          customizable links, supercharging audience engagement.
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-hero">
+        <h2>
+          Boost your links today
+        </h2>
+        <button>
+          Get Started
+        </button>
+      </div>
+      <div class="footer-nav">
+        <img class="logo" src="" alt="Shortly" />
+        <ul>
+          <li>
+            Features
+          </li>
+          <li>
+            Link Shortening
+          </li>
+          <li>
+            Branded Links
+          </li>
+          <li>
+            Analytics
+          </li>
+        </ul>
+        <ul>
+          <li>
+            Resources
+          </li>
+          <li>
+            Blog
+          </li>
+          <li>
+            Developers
+          </li>
+          <li>
+            Support
+          </li>
+        </ul>
+        <ul>
+          <li>
+            Company
+          </li>
+          <li>
+            About
+          </li>
+          <li>
+            Our Team
+          </li>
+          <li>
+            Careers
+          </li>
+          <li>
+            Contact
+          </li>
+        </ul>
+        <div class="socials">
+          <img class="social" src="./images/icon-facebook.svg" alt="" />
+          <img class="social" src="./images/icon-twitter.svg" alt="" />
+          <img class="social" src="./images/icon-pinterest.svg" alt="" />
+          <img class="social" src="./images/icon-instagram.svg" alt="" />
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js" charset="utf-8"></script>
+  </body>
 </html>
