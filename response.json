@@ -1,0 +1,16 @@
+{
+  "ok": true,
+  "docs": "https://shrtco.de/docs",
+  "result": {
+    "code": "yQqfk6",
+    "short_link": "shrtco.de/yQqfk6",
+    "full_short_link": "https://shrtco.de/yQqfk6",
+    "short_link2": "9qr.de/yQqfk6",
+    "full_short_link2": "https://9qr.de/yQqfk6",
+    "short_link3": "shiny.link/yQqfk6",
+    "full_short_link3": "https://shiny.link/yQqfk6",
+    "share_link": "shrtco.de/share/yQqfk6",
+    "full_share_link": "https://shrtco.de/share/yQqfk6",
+    "original_link": "http://example.org/very/long/link.html"
+  }
+}

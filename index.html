@@ -72,17 +72,27 @@
     <!-- url shortening -->
     <section class="url-shortener">
       <div class="url-container">
-        <input type="text" placeholder="Shorten a link here..." />
-        <button type="button" name="button">Shorten It!</button>
+        <input
+          type="text"
+          placeholder="Shorten a link here..."
+          id="url-input"
+        />
+        <button type="button" name="button" id="url-button">Shorten It!</button>
       </div>
 
       <div class="short-url">
-        <span class="long-link"
-          >Enter a link you would like to shorten above. Its just that
-          easy!</span
+        <span class="long-link" id="url-info">
+          Java Script has to be enabled for the URL shortening to work.
+        </span>
+        <span class="short-link"
+          ><a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://pages.tibush.com/shrtcode/frequently-asked-questions-faq"
+            >How does this work?</a
+          ></span
         >
-        <span class="short-link"><a href="">How does this work?</a></span>
-        <button type="button" name="button">Try it</button>
+        <button type="button" name="button" id="url-info-button">Try it</button>
       </div>
     </section>
 
